@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montaga&family=Open+Sans&family=Pacifico&family=Roboto&display=swap");
+
+:root {
+  --color-primary: #202731;
+  --color-secondary: #faf6f6;
+  --color-accent: #d90b1c;
+  --color-circle__top: #9acfdd;
+  --color-circle__right: #faf566;
+  --color-circle__bottom: #e5e5e5;
+
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+  --font-headings: "Montaga", serif;
+  --font-main__heading: "Indie Flower", cursive;
+  --font-selected__heading: "Pacifico", cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: var(--color-primary);
+  margin: 0;
+}
