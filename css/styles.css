@@ -25,4 +25,250 @@
 body {
   font-family: var(--color-primary);
   margin: 0;
+  overflow: visible;
+}
+
+h1 {
+  font-family: var(--font-main__heading);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: var(--font-headings);
+  font-size: 1.3rem;
+}
+
+p {
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+}
+
+h1,
+h2,
+p {
+  color: var(--color-secondary);
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: visible;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Left Section */
+.left-section {
+  width: 40%;
+  background: var(--color-primary);
+}
+
+.selected {
+  color: var(--color-accent);
+  font-family: var(--font-selected__heading);
+}
+
+/* Right Section */
+.right-section {
+  width: 70%;
+}
+
+.right-section h2,
+.right-section p {
+  color: var(--color-primary);
+  text-align: left;
+  margin: 1rem 8rem;
+}
+
+.right-section p {
+  font-family: var(--font-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .left-section {
+    width: 100%;
+  }
+}
+
+/* Shapes */
+.shapes-section {
+  position: relative;
+  width: 100%;
+}
+
+.circle-top {
+  position: absolute;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: var(--color-circle__top);
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.circle-right {
+  position: absolute;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: var(--color-circle__right);
+  top: 6rem;
+  left: 7rem;
+}
+
+.triangle-left {
+  position: absolute;
+  top: 5rem;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid var(--color-accent);
+  border-bottom: 50px solid transparent;
+}
+
+.circle-bottom {
+  position: absolute;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: var(--color-circle__bottom);
+  top: 11rem;
+  left: 1.5rem;
+}
+
+/* Form */
+form {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Inputs */
+.input {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: rgba(196, 196, 196, 0.26);
+  font-size: 0.8rem;
+  outline: 0;
+  padding: 0.7rem 10rem 0.7rem 1rem;
+  margin: 1rem 8rem;
+}
+
+::placeholder {
+  font-weight: 400;
+  font-family: var(--font-secondary);
+  color: rgb(32, 39, 49, 0.8);
+  font-style: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 0.9rem;
+    padding: 0.8rem 18rem 0.8rem 1rem;
+  }
+}
+
+/* Button */
+.btn {
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  margin: 1rem auto;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+/* Select */
+select {
+  background: rgba(196, 196, 196, 0.26);
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: rgb(32, 39, 49, 0.8);
+  display: block;
+  padding: 0.7rem 11.5rem 0.7rem 1rem;
+  font-family: var(--font-secondary);
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: 1rem 8rem;
+  outline: 0;
+}
+
+option {
+  background: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  select {
+    font-size: 0.9rem;
+    padding: 0.8rem 20rem 0.8rem 1rem;
+  }
+}
+
+label {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+.date-group {
+  margin: 0;
+  padding: 0 0 0 8rem;
+  text-align: left;
+}
+
+input[type="date"] {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: rgba(196, 196, 196, 0.26);
+  font-size: rem;
+  text-transform: uppercase;
+  outline: 0;
+  padding: 0.7rem 2rem 0.7rem 1rem;
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.date-label {
+  color: var(--color-primary);
+}
+
+.expertise-select {
+  margin-top: -0.8rem;
+  margin-bottom: 0;
+  padding: 0.7rem 10rem 0.7rem 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .expertise-select {
+    font-size: 0.9rem;
+    padding: 0.8rem 18rem 0.8rem 1rem;
+  }
 }
